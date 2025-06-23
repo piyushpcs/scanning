@@ -57,3 +57,5 @@ Open your terminal or command prompt and run the following command, **replacing 
 
 ```sh
 nmap -sS 192.168.1.0/24
+```
+Nmap will now send packets to every potential host on your network and report back which hosts are up and which of their ports are open. This may take a few minutes.
