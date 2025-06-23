@@ -96,10 +96,17 @@ utun2: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000
 utun3: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1000
 	inet6 fe80::ce81:b1c:bd2c:69e%utun3 prefixlen 64 scopeid 0x12 
 	nd6 options=201<PERFORMNUD,DAD>
+----------
+piyush@piyushs-MacBook-Air ~ % nmap -sS 192.168.16.71    
+You requested a scan type which requires root privileges.
+QUITTING!
 
+The -sS scan requires low-level network access, which is restricted to the root/admin user.
+
+Run the command with sudo to elevate your privileges.
+-----------
 piyush@piyushs-MacBook-Air ~ % sudo nmap -sS 192.168.16.71   
 Password:
-
 Starting Nmap 7.97 ( https://nmap.org ) at 2025-06-23 14:00 +0530
 Nmap scan report for 192.168.16.71
 Host is up (0.000024s latency).
@@ -107,3 +114,9 @@ Not shown: 998 closed tcp ports (reset)
 PORT     STATE SERVICE
 5000/tcp open  upnp
 7000/tcp open  afs3-fileserver
+
+Nmap done: 1 IP address (1 host up) scanned in 0.54 seconds
+
+
+
+
